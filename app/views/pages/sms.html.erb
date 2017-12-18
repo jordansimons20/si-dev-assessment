@@ -1,2 +1,9 @@
-<h1>Pages#sms</h1>
-<p>Find me in app/views/pages/sms.html.erb</p>
+<!doctype html>
+<head>
+  <h1 id="success">Success!</h1>
+</head>
+
+<body>
+  <p>Your message to <%= params[:phone_number] %> has been sent. Below is a copy of your message:</p>
+  <p id="message_confirmation"> <%= params[:message] %> </p>
+</body>
