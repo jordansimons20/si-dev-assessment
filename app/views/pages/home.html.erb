@@ -1,6 +1,19 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!doctype html>
+<head>
+  <h1>Twilio Text Message Application</h1>
+</head>
 
-<%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
-<% end %>
+<body>
+  <p id="welcome">Welcome! Fill out the form below, and you'll send a text message through Twilio. Please note: The number you enter must be verified through Twilio.</p>
+  <%= form_tag("/sms/send", method: "post") do %>
+    <%= label_tag(:phone_number, "Enter a Phone Number:") %>
+    <div id="label">
+      <%= text_field_tag(:phone_number) %>
+    </div>
+    <%= label_tag(:message, "Enter a Message:") %>
+    <div id="label">
+      <%= text_field_tag(:message) %>
+    </div>
+    <%= submit_tag("Send Message") %>
+  <% end %>
+</body>

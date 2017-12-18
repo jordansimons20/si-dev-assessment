@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+html * {
+  font-family: Arial;
+  text-align: center;
+}
+
+body {
+  background: #b2cecf;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #dd8b1a;
+}
+
+#welcome {
+  display:inline-block;
+  word-wrap: break-word;
+  width: 600px;
+}
+
+#label {
+  display:block;
+}
+
+#phone_number {
+  text-align: left;
+  font-size: 14px;
+}
+
+#message {
+  text-align: left;
+  font-size: 14px;
+  width: 500px;
+}
